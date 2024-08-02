@@ -10,18 +10,21 @@
             margin: 0;
         }
         #tb-tag{
-            margin: 0 auto;
             width: 800px;
+            margin: 0 auto;
         }
-        table, th, td{
-            border: solid 1px #000;
+        caption{
+            line-height: 50px;
+        }
+        th, td{
+            border: solid 1px #333;
             border-collapse: collapse;
         }
     </style>
 </head>
 <body>
     <table id="tb-tag">
-        <caption>테이블 제목</caption>
+        <caption>테이블 태그 샘플 태그입니다. 제목을 의미함</caption>
         <thead>
             <tr>
                 <th>NO</th>
@@ -33,21 +36,23 @@
             <tr>
                 <td>1</td>
                 <td>데이터가 담기는 태그</td>
-                <td rowspan="2">아래 td태그와 병합할거임</td>
+                <td rowspan="2">아래의 td태그와 병합할거임</td>
             </tr>
             <tr>
                 <td>2</td>
-                <td>윗층에서 하나를 가져감 여기는 티디가 두개뿐임</td>
+                <td>윗층에서 하나를 가져가는 바람에 여기는 td가 두개뿐이다.</td>
             </tr>
             <tr>
                 <td>3</td>
-                <td><em>정상화된 tr층</em></td>
-                <td><b>3개의 칸으로 정상화 되었음</b></td>
+                <td><b>다시 정상화</b></td>
+                <td><em>다시 칸 세개됨</em></td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <td colspan="3" align="center" valign="center" height="400px">집에 가고시픔<br>집인데<br>코드힘들다</td>
+                <td colspan="3" height="400px" align="center" valign="middle">
+                    두근거린다<br>왜냐하면은요<br>집가기 30분 전!캬캬
+                </td>
             </tr>
         </tfoot>
     </table>
