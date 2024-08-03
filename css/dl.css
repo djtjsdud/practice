@@ -1,25 +1,23 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 ul,ol,dl{
     list-style: none;
-}
-dl{
-    width: 800px;
-    margin: 0 auto;
-}
+} 
 dl dt{
+    width: 600px;
     background-color: #333;
     color: #fff;
-    line-height: 100px;
-    font-weight: bold;
-    text-indent: 40px; 
+    line-height: 50px;
+    margin: 0 auto;
+    text-indent: 40px;
 }
 dl dd{
-    background-color: #fff;
-    color: #000;
-    line-height: 100px;
+    width: 600px;
+    background-color: #678;
+    color: #fff;
+    line-height: 50px;
+    margin: 0 auto;
     text-indent: 60px;
-    display: none;
 }
