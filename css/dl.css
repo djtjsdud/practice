@@ -1,4 +1,4 @@
-*{
+/* *{
     padding: 0;
     margin: 0;
 }
@@ -20,4 +20,27 @@ dl dd{
     line-height: 50px;
     margin: 0 auto;
     text-indent: 60px;
+} */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+dl{
+    list-style: none;
+    text-align: center;
+}
+dl dt{
+    width: 500px;
+    background-color: #333;
+    color: #fff;
+    line-height: 50px;
+    margin: 0 auto;
+}
+dl dd{
+    width: 500px;
+    background-color: #93c2fd;
+    color: #fff;
+    line-height: 50px;
+    margin: 0 auto;
 }
