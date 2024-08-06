@@ -27,20 +27,19 @@ dl dd{
     margin: 0;
 }
 dl{
+    width: 500px;
     list-style: none;
     text-align: center;
+    margin: 0 auto;
 }
 dl dt{
-    width: 500px;
     background-color: #333;
     color: #fff;
     line-height: 50px;
-    margin: 0 auto;
 }
 dl dd{
-    width: 500px;
     background-color: #93c2fd;
     color: #fff;
     line-height: 50px;
-    margin: 0 auto;
+    display: none;
 }
