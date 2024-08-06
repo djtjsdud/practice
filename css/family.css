@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul,ol,dl{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#family{
+    width: 300px;
+    text-align: center;
+    margin: 200px auto;
+    position: relative;
+}
+input{
+    display: none;
+}
+label{
+    color: #fff;
+    display: block;
+    line-height: 50px;
+    background-color: #333;
+}
+#family ul{
+    position: absolute;
+    width: 100%;
+    bottom: 100%;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+#family ul li{}
+#family ul li a{
+    display: block;
+    color: #fff;
+    line-height: 50px;
+}
+#family #checkbox:checked ~ ul{
+    height: 250px;
+}
