@@ -21,15 +21,6 @@
             text-align: center;
             position: relative;
         }
-        #family input{
-            display: none;
-        }
-        #family label{
-            display: block;
-            line-height: 50px;
-            background-color: #333;
-            color: #fff;
-        }
         #family ul{
             position: absolute;
             width: 100%;
@@ -47,15 +38,22 @@
             color: #fff;
             border-bottom: solid 1px #fff;
         }
-        #family input:checked ~ ul{
-            height: 255px;
+        #family button{
+            display: block;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            line-height: 50px;
+            border: 0;
+        }
+        .slide{
+            height: 255px !important;
         }
     </style>
 </head>
 <body>
     <div id="family">
-        <input type="checkbox" id="checkBox">
-        <label for="checkBox">패밀리사이트</label>
+        <button>패밀리사이트</button>
         <ul>
             <li><a href="#">패밀리사이트1</a></li>
             <li><a href="#">패밀리사이트2</a></li>
@@ -65,4 +63,26 @@
         </ul>
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+    // $(function(){
+    //     $('#family button').on('click', function(){
+    //         $('#family ul').toggleClass('slide');
+    //     });
+    // });
+    $(function(){
+        $('#family button').on('click', function(){
+            $('#family ul').toggleClass('slide');
+        });
+    });
+
+    // addClass >클래스 추가
+    // removeClass > 클래스 삭제
+    // toggleClass> 클래스가 있으면 삭제, 없으면 추가
+    // 체크드 역할을 함
+    // document.querySelector('#family button').addEventlistener('click', funtion(){
+    //     document.querySelector('#family ul').classList.toggle('slide');
+    // });
+    // 위는 바닐라 스크립트 > 생언어
+</script>
 </html>
