@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    margin: 0 auto;
+    width: 100vw;
+    height: 300vh;
+}
+.container section{
+    background-color: antiquewhite;
+    color: #000;
+    line-height: 50px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+a{
+    text-decoration: none;
+}
+ul,ol,dl{
+    list-style: none;
+}
+#header{
+    width: 100%;
+    background-color: aliceblue;
+}
+#header .wrap{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.wrap h1{}
+.wrap h1 a{
+    color: #000;
+    display: block;
+    font-size: 20px;
+    line-height: 50px;
+}
+.wrap nav{}
+.depth-01{
+    display: flex;
+    text-align: center;
+}
+.depth-01 > li{
+    position: relative;
+}
+.depth-01 > li > a{
+    display: block;
+    color: #000;
+    line-height: 50px;
+    padding: 0 20px;
+    font-size: 16px;
+    text-align: center;
+}
+.depth-02{
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+}
+.depth-02 li{}
+.depth-02 li a{
+    color: #000;
+    display: block;
+    line-height: 50px;
+    font-size: 14px;
+    background-color: aliceblue;
+    border-bottom: solid 1px #000;
+}
+.depth-02 li:last-child a{
+    border-bottom: none;
+}
+#header .depth-01:hover .depth-02{
+    height: 255px;
+}
+#header .depth-01 li:hover > a,
+#header .depth-02 li:hover a{
+    background-color: #fff;
+}

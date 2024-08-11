@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+table{
+    width: 60vw;
+    margin: 100px auto 0;
+    line-height: 50px;
+    text-align: center;
+    background-color: azure;
+}
+table caption{
+    font-weight: bold;
+}
+table, th, td{
+    border: solid 1px #000;
+    border-collapse: collapse;
+
+}
+th{
+    background-color: #ddd;
+}
