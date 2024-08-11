@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul,ol,dl{
+            list-style: none;
+        }
+        #family{
+            width: 300px;
+            margin: 500px auto;
+            text-align: center;
+            position: relative;
+        }
+        #family ul{
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 100%;
+            height: 0;
+            overflow: hidden;
+            transition: all 0.6s ease-in-out;
+        }
+        #family ul li{}
+        #family ul li a{
+            display: block;
+            line-height: 50px;
+            background-color: #333;
+            color: #fff;
+            border-bottom: solid 1px #fff;
+        }
+        #family button{
+            display: block;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            line-height: 50px;
+            border: 0;
+        }
+        .slide{
+            height: 255px !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="family">
+        <button>패밀리사이트</button>
+        <ul>
+            <li><a href="#">패밀리사이트1</a></li>
+            <li><a href="#">패밀리사이트2</a></li>
+            <li><a href="#">패밀리사이트3</a></li>
+            <li><a href="#">패밀리사이트4</a></li>
+            <li><a href="#">패밀리사이트5</a></li>
+        </ul>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+    // $(function(){
+    //     $('#family button').on('click', function(){
+    //         $('#family ul').toggleClass('slide');
+    //     });
+    // });
+    $(function(){
+        $('#family button').on('click', function(){
+            $('#family ul').toggleClass('slide');
+        });
+    });
+
+    // addClass >클래스 추가
+    // removeClass > 클래스 삭제
+    // toggleClass> 클래스가 있으면 삭제, 없으면 추가
+    // 체크드 역할을 함
+    // document.querySelector('#family button').addEventlistener('click', funtion(){
+    //     document.querySelector('#family ul').classList.toggle('slide');
+    // });
+    // 위는 바닐라 스크립트 > 생언어
+</script>
+</html>
