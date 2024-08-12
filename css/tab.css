@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul,ol,dl{
+    list-style: none;
+}
+#tab-box{
+    margin: 5vh auto 0;
+    width: 50vw;
+    text-align: center;
+}
+.ab-box{
+    display: flex;
+    position: relative;
+}
+.ab-box > li{
+    width: 25%;
+}
+.ab-box > li input{
+    display: none;
+}
+.ab-box > li label{
+    display: block;
+    background-color: #333;
+    color: #fff;
+    line-height: 50px;
+}
+.ab-box div{
+    background-color: beige;
+    color: #333;
+    height: 400px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    border: solid 1px #333;
+    box-sizing: border-box;
+    border-top: 0;
+    line-height: 400px;
+}
+.ab-box > li input:checked ~ div{
+    z-index: 99;
+}
