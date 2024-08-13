@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.btn-01{
+    
+}
+.btn-02{}
+#ball{
+    width: 200px;
+    height: 200px;
+    background-color: #333;
+    border-radius: 50%;
+    border-top: solid 20px #ff0000;
+    border-left: solid 20px #0000ff;
+    border-bottom: solid 20px #ff0000;
+    border-right: solid 20px #0000ff;
+    position: absolute;
+    left: calc(50% - 120px);
+    /* margin: 10px auto; */
+    animation: move 1s ease-in-out 3s infinite alternate both running;
+    /* animation-play-state: paused; */
+    /* move라는 애니를 1초동안 ease-in-out 간격으로 1초뒤에 무한으로 양방향으로 번갈아가며 기본값 러닝(재생)하겠다 */
+}
+@keyframes move{
+    0%{
+        top: 0;
+        transform: rotate(0deg);
+    }
+    100%{
+        top: 70%;
+        transform: rotate(720deg);
+    }
+}
