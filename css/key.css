@@ -9,8 +9,9 @@
 #ball{
     width: 200px;
     height: 200px;
-    background-color: #333;
-    border-radius: 50%;
+    background-image: url(../img/iu.jpg);
+    background-size: 200px 300px;
+    border-radius: 20%;
     border-top: solid 20px #ff0000;
     border-left: solid 20px #0000ff;
     border-bottom: solid 20px #ff0000;
@@ -19,6 +20,7 @@
     left: calc(50% - 120px);
     /* margin: 10px auto; */
     animation: move 1s ease-in-out 3s infinite alternate both running;
+    /* -wepkit-animation: move 1s ease-in-out 3s infinite alternate both running; */
     /* animation-play-state: paused; */
     /* move라는 애니를 1초동안 ease-in-out 간격으로 1초뒤에 무한으로 양방향으로 번갈아가며 기본값 러닝(재생)하겠다 */
 }
@@ -32,3 +34,55 @@
         transform: rotate(720deg);
     }
 }
+/* @-webkit-keyframes move{
+    0%{
+        top: 0;
+        transform: rotate(0deg);
+    }
+    100%{
+        top: 70%;
+        transform: rotate(720deg);
+    }
+}
+@-o-keyframes move{
+    0%{
+        top: 0;
+        transform: rotate(0deg);
+    }
+    100%{
+        top: 70%;
+        transform: rotate(720deg);
+    }
+}
+@-moz-keyframes move{
+    0%{
+        top: 0;
+        transform: rotate(0deg);
+    }
+    100%{
+        top: 70%;
+        transform: rotate(720deg);
+    }
+}
+@-moz-keyframes move{
+    0%{
+        top: 0;
+        transform: rotate(0deg);
+    }
+    100%{
+        top: 70%;
+        transform: rotate(720deg);
+    }
+}
+@-ms-keyframes move{
+    0%{
+        top: 0;
+        transform: rotate(0deg);
+    }
+    100%{
+        top: 70%;
+        transform: rotate(720deg);
+    }
+}
+
+ */
