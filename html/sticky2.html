@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>포지션:스티키</title>
     <link rel="stylesheet" href="../css/sticky2.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../js/sticky.js"></script>
 </head>
 <body>
-    <div class="container">
-        <section class="wrap">나는 첫번째 섹션 태그이며 광고 팝업입니다.</section>
+    <div id="container">
+        <section id="popup">나는 첫번째 섹션 태그이며 광고 팝업입니다.</section>
         <header>
             <p>나는 header 안에 p태그 입니다.</p>
+            <span class="transform"></span>
         </header>
     </div>
+    <a href="#popup" class="top-btn">TOP</a>
 </body>
 </html>
-<!-- div#container>section#wrap>div.no-0$*3 -->
+<!-- div#container>section#wrap>div.no-0$*3
