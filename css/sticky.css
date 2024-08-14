@@ -3,126 +3,46 @@
     margin: 0;
 }
 .container{
+    width: 80vw;
+    text-align: center;
     margin: 0 auto;
-    width: 100vw;
     height: 300vh;
 }
 .container section{
-    background-color: antiquewhite;
-    color: #000;
-    line-height: 50px;
-    text-align: center;
+    background-color: #342793;
+    color: #fff;
+    line-height: 8vh;
+}
+.container header{
+    background-color: #578976;
+    color: #fff;
+    line-height: 14vh;
     position: sticky;
     top: 0;
-    z-index: 9;
 }
-a{
-    text-decoration: none;
+.container header p{
+    display: inline-block;
 }
-ul,ol,dl{
-    list-style: none;
+#square{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ffff00;
+    /* transform-origin: center; */
+    transition: all 0.6s linear;
 }
-#header{
-    width: 100%;
-    background-color: aliceblue;
+.container header:hover #square{
+    transform: translateX(100px) rotate(1200deg);
 }
-#header .wrap{
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-}
-.wrap h1{}
-.wrap h1 a{
-    color: #000;
-    display: block;
-    font-size: 20px;
-    line-height: 50px;
-}
-.wrap nav{}
-.depth-01{
-    display: flex;
+#top{
+    width: 10vw;
+    line-height: 20vh;
+    border-radius: 50%;
     text-align: center;
-}
-.depth-01 > li{
-    position: relative;
-}
-.depth-01 > li > a{
-    display: block;
-    color: #000;
-    line-height: 50px;
-    padding: 0 20px;
-    font-size: 16px;
-    text-align: center;
-}
-.depth-02{
-    position: absolute;
-    width: 100%;
-    top: 100%;
-    left: 0;
-    height: 0;
-    overflow: hidden;
-    transition: all 0.6s ease-in-out;
-}
-.depth-02 li{}
-.depth-02 li a{
-    color: #000;
-    display: block;
-    line-height: 50px;
-    font-size: 14px;
-    background-color: aliceblue;
-    border-bottom: solid 1px #000;
-}
-.depth-02 li:last-child a{
-    border-bottom: none;
-}
-#header .depth-01:hover .depth-02{
-    height: 255px;
-}
-#header .depth-01 li:hover > a,
-#header .depth-02 li:hover a{
-    background-color: #fff;
-}*{
-    padding: 0;
-    margin: 0;
-}
-#container{}
-#wrap{
-    height: 300vh;
-}
-#wrap > div{
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    line-height: 200px;
-    font-size: 3em;
-    font-weight: bold;
+    background-color: #333;
     color: #fff;
-    margin-left: 30px;
-}
-#wrap .no-01{
-    background-color: #178325;
-    position: sticky;
-    top: 10px;
-    z-index: 2;
-    /* 부모태그의 크기를 기준으로 절대 위치를 지정 */
-    /* 스티키 속성은 static과 fixed 속성의 특징 모두 갖고 있음 */
-    /* 도달 위치 반드시 설정(top, bottom, left, right 중 하나 반드시 필요) */
-    /* 조상 태그에 오버플로우 설정되어있으면 말 안들음 */
-    /* 부모 태그가 반드시 헤이트 값이 설정되어있어야 한다. */
-    /* 헤이트 값을 %로 지정히면 말 안들음 */
-}
-#wrap .no-02{
-    background-color: #ff0000;
+    display: block;
     position: fixed;
-    top: 10px;
-    z-index: 1;
-    left: 230px;
-}
-#wrap .no-03{
-    background-color: #ff8a00;
-    position: relative;
-    top: 10px;
-    left: 460px;
-    z-index: 3;
+    bottom: 0px;
+    right: 20px;
 }

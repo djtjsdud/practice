@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1번문제</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../test01/css/form.css">
+</head>
+<body>
+    <form action="../test02/form2.html" id="form-tag">
+        <fieldset>
+            <span class="title">로그인</span>
+            <ul class="info">
+                <li><input type="text" placeholder="아이디" name="ID" maxlength="12" minlength="5"></li>
+                <li><input type="password" placeholder="패스워드" name="PW" maxlength="10" minlength="6"></li>
+            </ul>
+            <span class="auto">
+                <input type="checkbox" id="autologin" name="autologin" value="autologin" checked>
+                <label for="autologin">자동로그인</label>
+            </span>
+            <input type="submit" id="ok" value="확인" onclick="suc()">
+            <ul class="join">
+                <li><a href="#">회원가입</a></li>
+                <li><span></span></li>
+                <li><a href="#">아이디/비밀번호 찾기</a></li>
+            </ul>
+            <ul class="border">
+                <li><a href="#" id="facebook" class="site">페이스북</a></li>
+                <li><a href="#" id="google" class="site">구글</a></li>
+                <li><a href="#" id="naver" class="site">네이버</a></li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
