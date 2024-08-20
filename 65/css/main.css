@@ -1,4 +1,4 @@
-@charset "FTP";
+@charset "UTF-8";
 *{
     padding: 0;
     margin: 0;
@@ -18,7 +18,6 @@ a{
     display: flex;
     justify-content: space-between;
     background-color: #fff;
-    border-bottom: solid 1px #000;
     height: 100px;
 }
 #header h1{
@@ -47,6 +46,7 @@ a{
 #header .depth-01 > li > a{
     display: block;
     line-height: 100px;
+    transition: all 0.3s ease-in-out;
 }
 
 #header .depth-02{
@@ -57,23 +57,17 @@ a{
     overflow: hidden;
     height: 0;
     transition: all 0.6s ease-in-out;
-    border-bottom: solid 1px #000;
     background-color: #fff;
 }
 #header .depth-02 li{}
-#header .depth-01 > li:first-child .depth-02{
-    border-left: solid 1px #000;
-}
-#header .depth-01 > li:last-child .depth-02{
-    border-right: solid 1px #000;
-}
 #header .depth-02 li a{
     display: block;
     line-height: 50px;
+    transition: all 0.3s ease-in-out;
 }
 #header .depth-01 > li:hover > a,
 #header .depth-02 li:hover a{
-    background-color: #333;
+    background-color: #007900;
     color: #fff;
 }
 #header .depth-01:hover .depth-02{
@@ -82,14 +76,143 @@ a{
 
 /* ////////////////////////////////////////////////////// */
 #mainbanner{
-    background-color: aliceblue;
-    height: 300px;
+    
 }
-#mainbanner ul{}
+#mainbanner ul{
+    height: 300px;
+    background-color: #ccc;
+}
 #mainbanner ul li{}
 
 /* ////////////////////////////////////////////////////// */
+#content{}
+#content > ul{
+    display: flex;
+}
+#content > ul > li{
+    width: 33.333%;
+}
+#content .tab-box{
+    display: flex;
+    width: 300px;
+    background-color: aliceblue;
+}
+#content .tab-box > ul{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+#content .tab-box > ul > li{
+}
+#content .tab-box > ul > li input{
+    display: none;
+}
+#content .tab-box > ul > li label{
+    display: block;
+    padding: 0 20px;
+}
+#content .ab-box{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+}
 
-.tab-box{}
-.tab-box ul{}
-.tab-box
+#content .notice{
+    position: relative;
+}
+#content .notice dl{
+    display: block;
+}
+#content .notice dl dt{}
+#content .notice dl dt a{}
+#content .notice dl dd{}
+#content .notice dl dd a{}
+
+#content .gallery ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#content .gallery .ab-box{
+    display: flex;
+}
+#content .gallery ul li{}
+#content .gallery ul li a{}
+
+
+#content .middle-banner{}
+#content .middle-banner a{
+    display: block;
+
+}
+#content .direct{}
+#content .direct button{}
+
+#content .tab-box > ul > li input:checked ~ .ab-box{
+    z-index: 9;
+}
+
+/* ///////////////////////푸터 */
+#footer{}
+#footer > ul{
+    display: flex;
+}
+#footer > ul > li{}
+#footer ul .bottom-logo{
+    width: 20%;
+}
+#footer .bottom-logo a{
+    display: flex;
+}
+#footer .copy p{
+    line-height: 100px;
+    text-align: center;
+}
+#footer .sns-list li{}
+#footer .sns-list li a{
+    display: block;
+}
+#footer .sns-list li a img{}
+#footer ul .copy{
+    width: 60%;
+}
+#footer ul .sns-icon{
+    width: 20%;
+}
+
+
+/* /////////////////팝업 */
+#popup-box{
+    position: fixed;
+    width: 600px;
+    height: 300px;
+    background-color: #fff;
+    border: solid 1px #000;
+    top: calc(50% - 150px);
+    left: calc(50% - 300px);
+    z-index: 999;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 40px;
+    display: none;
+}
+#popup-box #close-btn{
+    position: absolute;
+    padding: 20px;
+    top: 5%;
+    right: 5%;
+    border: 0;
+    background-color: #fff;
+    box-shadow: 6px 6px 6px #ccc;
+    cursor: pointer;
+
+}
+#popup-box h3{
+    margin: 40px 0;
+}
+#popup-box p{}
+.show{
+    display: block !important;
+}
